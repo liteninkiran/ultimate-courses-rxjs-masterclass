@@ -7,5 +7,4 @@ const addClass = isLoading => isLoading
     : classList.remove('open');
 
 loadingService.loadingStatus$.subscribe(addClass);
-loadingService.showLoading();
 setTimeout(() => loadingService.hideLoading(), 1500);
